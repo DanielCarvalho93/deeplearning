@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Machine Learning</title>
+        <link rel="stylesheet" href="../static/css/styles.css">
+    </head>
+    <body>
+      <center> <h1 class="logo"> YUGIDEX </h1> </center>
+            <strong><nav>
+                <ul class="menu">
+                  <li><a href="{{ url_for('home') }}">HOME</a></li>
+                  <li><a href="{{ url_for('Deck') }}">DECK</a></li>
+                </ul>
+              </nav></strong>
+
+
+
+    <div
+        <table class="table">
+        <!--Displaying the converted table-->
+        {% for table in tables %}
+        <h2>{{titles[loop.index]}}</h2>
+        {{ table|safe }}
+        {% endfor %}
+      </table>
+    </div>
+
+
+      <div class=" total"
+        <h1>
+        <h1>cardmarket: {{cm}}€</h1>
+        <h1>tcgplayer: {{tcg}}€</h1>
+        <h1>ebay: {{eb}}€</h1>
+        <h1>amazon: {{az}}€</h1>
+        <h1>coolstuffinc: {{cs}}€</h1>
+      </div>
+
+    </body>
+</html>
